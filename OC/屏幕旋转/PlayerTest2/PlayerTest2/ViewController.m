@@ -90,6 +90,10 @@ static CGFloat AnimationDuration = 0.3;//旋转动画执行时间
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
 
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationLandscapeLeft;
+}
+
 #pragma mark - private method
 
 - (void)fullScreenAction:(UIButton *)sender {
